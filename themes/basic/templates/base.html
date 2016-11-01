@@ -1,0 +1,19 @@
+{% extends "!simple/base.html" %} {% block head %} {{ super() }}
+<link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/style.css?1500" /> {% endblock %}
+
+<body id="index" class="home">
+    <header id="banner" class="body">
+        <h1><a href="{{ SITEURL }}/">{{ SITENAME }} <strong>{{ SITESUBTITLE }}</strong></a></h1>
+    </header>
+    <!-- /#banner -->
+    <nav id="menu">
+
+    </nav>
+    <!-- /#menu -->
+    {% block content %} {% endblock %}
+    <footer id="contentinfo" class="body">
+        <footer role="contentinfo">{% include 'footer.html' %}</footer>
+
+    </footer>
+    <!-- /#contentinfo -->
+</body>
